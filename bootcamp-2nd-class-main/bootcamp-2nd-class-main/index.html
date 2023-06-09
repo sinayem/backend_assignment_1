@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to web development class 2</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- This is the header section -->
+    <header class="container mx-auto bg-white shadow-md">
+      <nav class="p-5 flex justify-between items-center">
+        <img
+          src="https://www.vivasoftltd.com/wp-content/uploads/2022/09/Logo-5.svg"
+        />
+        <ul class="flex justify-end items-center gap-4">
+          <li>
+            <a
+              class="hover:underline underline-offset-2 transition-all duration-150"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:underline underline-offset-2 transition-all duration-150"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:underline underline-offset-2 transition-all duration-150"
+              href="#"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:underline underline-offset-2 transition-all duration-150"
+              href="#"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- This is the main section -->
+    <main class="container mx-auto p-5">
+      <section class="flex justify-between items-center">
+        <div class="w-2/5 flex flex-col justify-start items-start gap-5">
+          <h1 class="text-6xl leading-snug font-bold text-sky-500">
+            Wellcome to the introductory class of web development.
+          </h1>
+          <p class="text-base text-sky-950">
+            Here you can learn some basic knowledge about frontend and backend
+            development.
+          </p>
+        </div>
+        <div class="w-2/5">
+          <img class="w-full" src="./images/banner.jpg" />
+        </div>
+      </section>
+     
+
+      <section class="mt-20">
+        <div class="flex justify-center items-center">
+          <table class="w-2/3 max-auto">
+            <thead class="bg-sky-100">
+              <tr class="">
+                <th class="p-3 text-start">Ranking</th>
+                <th class="p-3 text-start">Name</th>
+                <th class="p-3 text-start">Country</th>
+                <th
+                  onclick="sortUserScores()"
+                  id="score_column"
+                  class="p-3 text-start cursor-pointer hover:underline underline-offset-2 transition-all duration-150"
+                >
+                  Score
+                </th>
+              </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
